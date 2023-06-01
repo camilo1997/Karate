@@ -23,8 +23,8 @@ pipeline {
         always {
             publishHTML(target: [
                 reportName: 'Karate',
-                reportDir: 'build/reports/tests/test',
-                reportFiles: 'index.html',
+                reportDir: 'build/karate-reports',
+                reportFiles: 'karate-summary.html',
                 keepAll: true,
                 alwaysLinkToLastBuild: true,
                 allowMissing: false
